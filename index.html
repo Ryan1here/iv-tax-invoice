@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tav invoice and Credit note</title>
+  </head>
+
+  <!------------->
+  <style>
+    * {
+      margin: 0%;
+      /* padding: 0%; */
+      text-align: left;
+      box-sizing: border-box;
+      vertical-align: top;
+    }
+
+    body {
+      width: 62%;
+      margin: auto;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+
+    table,
+    tr,
+    td,
+    th {
+      border: 0.5px solid black;
+      border-spacing: 0.5px;
+      padding: 5px;
+    }
+
+    li {
+      margin-bottom: 20px;
+    }
+
+    section {
+      width: 90%;
+      text-wrap: pretty;
+    }
+  </style>
+  <!------------->
+  <body>
+    <caption>
+      <h1 style="text-align: center">Tax Invoice</h1>
+    </caption>
+    <caption>
+      <h2 style="text-align: center">QR Code and IRIN</h2>
+    </caption>
+
+    <table>
+      <!-- row1 -->
+      <tr>
+        <th rowspan="2" colspan="3">
+          <img
+            style="width: 120px; padding: 0px 15px; float: left"
+            src="./logo.png"
+            alt=""
+          />
+          <div style="float: right">
+            <strong>Indusviva Healthsciences Pvt Ltd</strong> <br />
+            No.36, Nandi Durga Road, Jayamahal Extension,<br />
+            Bangalore -560046.<br />
+            <strong>GSTIN/UIN : </strong>29AADCI4484Q1ZQ<br />
+            <strong>State Name : </strong>Karnataka <br />
+            <strong>Code : </strong>29<br />
+            <strong>CIN : </strong>U15100KA2014PTC073082<br />
+            <strong>E-Mail : </strong>contact@indusviva.com
+          </div>
+        </th>
+
+        <th colspan="3">
+          <strong>Invoice No : </strong> <br />
+          117/ Viva/ 23-24
+        </th>
+
+        <th colspan="3">
+          <strong>Invoice Date : </strong> <br />
+          01-Apr-2023
+        </th>
+      </tr>
+
+      <!-- row2 -->
+      <tr>
+        <!-- <td rowspan="2"></td> -->
+
+        <td colspan="3">Order No:</td>
+
+        <td colspan="3">
+          <strong>Mode of payment</strong> <br />
+          NEFT/Payu/RTGS/Deibt Card/Credit Card (select the appropriate mode)
+          <br />
+          <strong>Bank Generated Number : </strong> <br />
+          <strong>Payment Gateway Reference No : </strong> <br />
+          (capture Gateway Transaction Reference No) <br />
+        </td>
+      </tr>
+      <!-- row3 -->
+      <tr>
+        <td colspan="3">
+          Buyer (Bill TO)<br />
+          <strong>Consumer Name Address</strong> <br />
+          State name : __________ Code : _______ <br />
+          GSTIN :
+        </td>
+
+        <td colspan="6">
+          Dispatch through :<br />
+          Dispatch Doc no :<br />
+          Dispatch Date :
+        </td>
+      </tr>
+
+      <!-- row4 -->
+      <tr>
+        <td colspan="3">
+          Consignee (Ship To) <br />
+          CongineeName : <br />
+          Address : <br />
+          State Name : _______ <br />
+          Code : _______ <br />
+          Distributor ID : <br />
+        </td>
+
+        <td colspan="6">E&OE</td>
+      </tr>
+
+      <!-- row5 -->
+      <tr>
+        <td colspan="1">SL NO</td>
+        <td colspan="1">Description</td>
+        <td colspan="1">HSN / SAC</td>
+        <td colspan="1">GST Rate</td>
+        <td colspan="1">Quantity</td>
+        <td colspan="1">UOM</td>
+        <td colspan="1">Unit Price</td>
+        <td colspan="1">Discount</td>
+        <td colspan="1">Amount</td>
+      </tr>
+
+      <!-- row6 -->
+      <tr>
+        <td>1</td>
+        <td>I - PULSE +</td>
+        <td>22029920</td>
+        <td>18 %</td>
+        <td>1</td>
+        <td>NOS</td>
+        <td>2676.34</td>
+        <td>NIL</td>
+        <td>2676.34</td>
+      </tr>
+
+      <!-- row7 -->
+      <tr>
+        <td>2</td>
+        <td>Handling Charges =</td>
+        <td>996719</td>
+        <td>18 %</td>
+        <td></td>
+        <td>NOS</td>
+        <td>169.49</td>
+        <td>NIL</td>
+        <td>169.49</td>
+      </tr>
+
+      <!-- row8 -->
+      <tr>
+        <td></td>
+
+        <td>
+          Total Before Tax & Discount<br />
+          IGST INPUT TAX Round Of
+        </td>
+        <td></td>
+        <td>18%</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+          2845.83<br />
+          512.24<br />
+          -0.07
+        </td>
+      </tr>
+
+      <!-- row9 -->
+      <tr>
+        <td colspan="8">Total Amount</td>
+        <td>3,358</td>
+      </tr>
+
+      <!-- row10 -->
+      <tr>
+        <td colspan="9">
+          Amount in Words : <strong> Three Hundred Firty Eight Only</strong>
+        </td>
+      </tr>
+
+      <!-- row11 -->
+      <tr>
+        <td rowspan="2"><strong>HSN / SAC</strong></td>
+        <td rowspan="2"><strong>Taxable Value</strong></td>
+        <td colspan="2"><strong>Central Tax</strong></td>
+        <td colspan="2"><strong>State Tax</strong></td>
+        <td colspan="2"><strong>Interated Tax</strong></td>
+        <td rowspan="2"><strong>Total Tax Amount</strong></td>
+      </tr>
+
+      <!-- row12 -->
+      <tr>
+        <td>Rate</td>
+        <td>Amount</td>
+        <td>Rate</td>
+        <td>Amount</td>
+        <td>Rate</td>
+        <td>Amount</td>
+      </tr>
+
+      <!-- row13 -->
+      <tr>
+        <td>22029920</td>
+        <td>2676.34</td>
+        <td>0.00 %</td>
+        <td>0.00</td>
+        <td>0.00 %</td>
+        <td>0.00</td>
+        <td>18.00 %</td>
+        <td>481.74</td>
+        <td>481.74</td>
+      </tr>
+
+      <!-- row14 -->
+      <tr>
+        <td>996719</td>
+        <td>169.49</td>
+        <td>0.00 %</td>
+        <td>0.00</td>
+        <td>0.00 %</td>
+        <td>0.00</td>
+        <td>18.00 %</td>
+        <td>30.50</td>
+        <td>30.50</td>
+      </tr>
+
+      <!-- row15 -->
+      <tr>
+        <td>Total</td>
+        <td>2845.83</td>
+        <td colspan="2">0.00</td>
+        <td colspan="2">0.00</td>
+        <td colspan="2">512.24</td>
+        <td>512.24</td>
+      </tr>
+
+      <!-- row16 -->
+
+      <tr>
+        <td colspan="9">
+          Tax Amount (in words) :
+          <strong>Hundred Twelve and Twenty Four Paise Only</strong>
+        </td>
+      </tr>
+
+      <!-- row17 -->
+
+      <tr>
+        <td colspan="9" style="text-align: center">
+          As This is Computer Generated Document, Does Not Require Signature.
+        </td>
+      </tr>
+    </table>
+
+    <section style="margin-top: 2rem">
+      <p style="margin-bottom: 10px">Store Link Orders.</p>
+      <ul>
+        <li>
+          Invoice has to be generated and Account statement should be maintained
+          for the customers who buy products through store link.
+        </li>
+        <li>
+          Transactions entered by customers should not be accounted in
+          distributors statement of account as it is happening now.
+        </li>
+        <li>
+          Once the order is placed and payment is made, customer should get copy
+          of QR code and IRIN Invoice immediately.
+        </li>
+        <li>
+          Customer should get option to fill bill to and ship to address along
+          with his GST only. Distributors GST should not be taken at all.
+          Invoice will have ‘Bill to’ – Customer name and address and GST.
+        </li>
+        <li>
+          Distributor’s ID will be mentioned in the invoice for the purpose of
+          computation of commission, PV through distributors etc which is
+          internal to organisation.
+        </li>
+        <li>Ship to’ will be consignee’s name & address.</li>
+        <li>
+          Distributor will be able to claim GST only for the purchases done by
+          him. He cannot claim GST for the orders placed by customer
+        </li>
+      </ul>
+    </section>
+
+    <section style="margin-top: 2rem">
+      <p style="margin-bottom: 10px">VOTM.</p>
+      <ul>
+        <li>
+          In addition to Invoice generated under store link steps mentioned
+          above, following to be followed.
+        </li>
+        <li>
+          ndusviva to raise Credit Note with bill to in the name of VOTM
+          distributor for return of goods with ship to details of consumer.
+        </li>
+        <li>
+          The same goods can be moved from VOTM distributor location to consumer
+          location along with above Credit Note and Invoice generated based on
+          step 1 and 2 above.
+        </li>
+        <li>
+          Separate Invoice in the name of VOTM distributor against the Credit
+          Note generated as per step 2 above along with movement of goods.
+        </li>
+      </ul>
+    </section>
+
+    <section style="margin-top: 2rem">
+      <p style="margin-bottom: 10px">GST clarification:</p>
+      <ul>
+        <li>
+          for consumer having GST number mentioned in bill to - his GST will be
+          considered for charging GST in billing and taking GST credit. The
+          transaction will be recorded as Business to Business (B2B)
+        </li>
+        <li>
+          for Consumer not having GST number, ship to address/state will be
+          considered for charging GST in billing no one will get GST credit. The
+          transaction will be recorded as Business to Consumer (B2C)
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
